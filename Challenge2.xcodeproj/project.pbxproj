@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525FEC9518ABBD7900C4CBE1 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FEC9418ABBD7900C4CBE1 /* TableCell.m */; };
 		52C045FB18A92C7700E87798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045FA18A92C7700E87798 /* Foundation.framework */; };
 		52C045FD18A92C7700E87798 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045FC18A92C7700E87798 /* CoreGraphics.framework */; };
 		52C045FF18A92C7700E87798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045FE18A92C7700E87798 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		525FEC9318ABBD7900C4CBE1 /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		525FEC9418ABBD7900C4CBE1 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
 		52C045F718A92C7700E87798 /* Challenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C045FA18A92C7700E87798 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52C045FC18A92C7700E87798 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				52C0460C18A92C7700E87798 /* Main.storyboard */,
 				52C0462F18AA847800E87798 /* TableViewController.h */,
 				52C0463018AA847800E87798 /* TableViewController.m */,
+				525FEC9318ABBD7900C4CBE1 /* TableCell.h */,
+				525FEC9418ABBD7900C4CBE1 /* TableCell.m */,
 				52C0461218A92C7700E87798 /* Images.xcassets */,
 				52C0460118A92C7700E87798 /* Supporting Files */,
 			);
@@ -251,6 +256,7 @@
 			files = (
 				52C0460B18A92C7700E87798 /* AppDelegate.m in Sources */,
 				52C0463118AA847800E87798 /* TableViewController.m in Sources */,
+				525FEC9518ABBD7900C4CBE1 /* TableCell.m in Sources */,
 				52C0460718A92C7700E87798 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +468,7 @@
 				52C0462B18A92C7700E87798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52C0462C18A92C7700E87798 /* Build configuration list for PBXNativeTarget "Challenge2Tests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				52C0462E18A92C7700E87798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

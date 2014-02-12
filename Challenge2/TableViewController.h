@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableCell.h"
 
 @interface TableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *titles;
-@property (nonatomic, strong) NSArray *description;
+@property (nonatomic, strong) NSArray *libraries;
+@property (nonatomic, strong) NSArray *books;
+@property (nonatomic, strong) NSArray *shelves;
 @end

@@ -27,9 +27,9 @@
 {
     [super viewDidLoad];
 
-    _titles = @[@"dog", @"cat",];
-    _description = @[@"aa" ,@"fsdf",];
-    
+    _libraries = @[@"greenwood", @"university",];
+    _shelves = @[@"1" ,@"2",];
+    _books = @[@"scarlet letter" ,@"soon yi",];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -50,23 +50,25 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return _libraries.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"TableCell";
+    TableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    int row = [indexPath row];
+    cell.libraryLabel.text= _libraries[row];
+    cell.selfLabel.text= _shelves[row];
+    cell.bookLabel.text= _books[row];
     return cell;
 }
 
